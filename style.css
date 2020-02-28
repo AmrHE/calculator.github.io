@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* The whole calculator*/
+
+.container {
+    margin: auto;
+    width: 400px;
+    height: 600px;
+    background-color: #3a4655;
+    margin-top: 10px;
+    -webkit-box-shadow: -2px 12px 55px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 12px 55px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: -2px 12px 55px 3px rgba(0, 0, 0, 0.75);
+}
+
+
+/* The path the user did use shown at top */
+
+.currentPath {
+    text-align: right;
+    width: 80%;
+    margin: auto;
+    color: #727b86;
+    border-bottom: 2px dotted #727b86;
+    height: 70px;
+    font-weight: bold;
+    font-size: 1.5em;
+    overflow: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.currentPath span {
+    line-height: 70px;
+    padding-bottom: 5px;
+}
+
+
+/* what the user is currently typing */
+
+.currentInput {
+    width: 80%;
+    margin: auto;
+    height: 70px;
+    color: white;
+    text-align: right;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.currentInput p {
+    line-height: 70px;
+}
+
+
+/* all the buttons */
+.buttons button {
+    background-color:silver;
+    width: 96px;
+    height: 87px;
+    border: none;
+    color: black;
+    font-size: 2em;
+    margin: 2px auto;
+}
+
+#zero {
+    width: 196px;
+}
+
+#backspace {
+    width: 196px;
+}
+
+.buttons .operator {
+    background-color: orange;
+}
+#exponent{
+    background-color: silver;
+}
+
+.buttons button:hover {
+    background-color:white;
+}
+
+
+/* scrollbar style copied from https://codepen.io/abhishekp1996/pen/JXYBmp*/
+
+.currentPath::-webkit-scrollbar-track {
+    background-color: #65768c;
+    border-radius: 10px;
+}
+
+.currentPath::-webkit-scrollbar {
+    height: 10px;
+}
+
+.currentPath::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #2a323c;
+}
+
+h1{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#equalsButton{
+    background-color: orange;
+}
